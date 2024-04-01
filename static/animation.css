@@ -1,0 +1,272 @@
+@import "/pokemon/static/pokemon.css";
+
+
+/*========================================================
+    POKEMON COLLECTION ANIMATION
+==========================================================*/
+.pikachu:hover{
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px rgba(241, 234, 130, 0.7), 0 0 25px rgba(250, 245, 177, 0.7), 0 0 50px rgba(252, 249, 215, 0.7), 0 0 200px rgba(117, 114, 73, 0.7);
+    }
+}
+.squirtle:hover{
+    animation: glow-squirtle 1s ease-in-out infinite alternate;
+}
+@keyframes glow-squirtle {
+    0%{
+        box-shadow: 0 0 5px rgba(149, 183, 255, 0.7), 0 0 25px rgba(129, 168, 253, 0.7), 0 0 50px rgba(86, 139, 255, 0.7), 0 0 200px rgba(46, 112, 255, 0.7);
+    }
+}
+.bulbasaur:hover{
+    animation: glow-bulbasaur 1s ease-in-out infinite alternate;
+}
+@keyframes glow-bulbasaur {
+    0%{
+        box-shadow: 0 0 5px rgba(199, 255, 216, 0.7), 0 0 25px rgba(165, 255, 192, 0.7), 0 0 50px rgba(102, 245, 145, 0.7), 0 0 200px rgba(64, 255, 121, 0.7);
+    }
+}
+.charizard:hover{
+    animation: glow-charizard 1s ease-in-out infinite alternate;
+}
+@keyframes glow-charizard {
+    0%{
+        box-shadow: 0 0 5px rgba(236, 202, 88, 0.7), 0 0 25px rgba(255, 165, 165, 0.7), 0 0 50px rgba(42, 114, 221, 0.7), 0 0 200px rgba(255, 195, 64, 0.7);
+    }
+}
+.caterpie:hover{
+    animation: glow-caterpie 1s ease-in-out infinite alternate;
+}
+@keyframes glow-caterpie{
+    0%{
+        box-shadow: 0 0 5px rgba(199, 255, 216, 0.7), 0 0 25px rgba(165, 255, 192, 0.7), 0 0 50px rgba(231, 245, 102, 0.7), 0 0 200px rgba(129, 165, 30, 0.7);
+    }
+}
+.snorlax:hover{
+    animation: glow-snorlax 1s ease-in-out infinite alternate;
+}
+@keyframes glow-snorlax {
+    0%{
+        box-shadow: 0 0 5px rgba(135,206,235, 0.7), 0 0 25px rgba(135,206,235, 0.7), 0 0 50px rgba(135,206,235, 0.7), 0 0 200px rgba(135,206,235, 0.7);
+    }
+}
+.machamp:hover{
+    animation: glow-machamp 1s ease-in-out infinite alternate;
+}
+@keyframes glow-machamp {
+    0%{
+        box-shadow: 0 0 5px rgba(188, 174, 238, 0.7), 0 0 25px rgba(139, 121, 202, 0.7), 0 0 50px rgba(81, 61, 151, 0.7), 0 0 200px rgba(54, 35, 124, 0.7)
+    }
+}
+.abra:hover{
+    animation: glow-abra 1s ease-in-out infinite alternate;
+}
+@keyframes glow-abra {
+    0%{
+        box-shadow: 0 0 5px #949662, 0 0 25px #9fa158, 0 0 50px #acaf44, 0 0 200px #c6cc16;
+    }
+}
+.corviknight:hover{
+    animation: glow-corviknight 1s ease-in-out infinite alternate;
+}
+@keyframes glow-corviknight {
+    0%{
+        box-shadow: 0 0 5px rgba(28, 5, 112, 0.7), 0 0 25px rgba(54, 15, 196, 0.7), 0 0 50px rgba(55, 28, 150, 0.7), 0 0 200px rgba(10, 7, 20, 0.7)
+    }
+}
+.snivy:hover{
+    animation: glow-snivy 1s ease-in-out infinite alternate;
+}
+@keyframes glow-snivy {
+    0%{
+        box-shadow: 0 0 5px rgba(63, 110, 77, 0.7), 0 0 25px rgba(88, 196, 120, 0.7), 0 0 50px rgba(42, 128, 67, 0.7), 0 0 200px rgba(11, 110, 41, 0.7)
+    }
+}
+.zoroark:hover{
+    animation: glow-zoroark 1s ease-in-out infinite alternate;
+}
+@keyframes glow-zoroark {
+    0%{
+        box-shadow: 0 0 50px rgba(255, 0, 0, 0.7), 0 0 200px rgba(124, 0, 0, 0.7), 0 0 5px rgba(28, 5, 112, 0.7), 0 0 25px rgba(54, 15, 196, 0.7)
+    }
+}
+/*===================================================
+    TEXT ANIMATION
+=====================================================*/
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Loading animation, save for later! */
+.lineUp {
+    animation: 2s anim-lineUp ease-out infinite;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+/*===================================================
+    TEXT ANIMATION
+=====================================================*/
+@keyframes slide-in-left {
+    0%{
+        opacity: 30%;
+        transform: translate(-100%);
+    }
+    100%{
+        opacity: 100%;
+        transform: translate(0);
+    }
+}
+@keyframes slide-in-right {
+    0%{
+        opacity: 30%;
+        transform: translate(100%);
+    }
+    100%{
+        opacity: 100%;
+        transform: translate(0);
+    }
+}  
+@keyframes drop-in {
+    from {
+     opacity: 0;
+     transform: translateY(-100px);
+    }
+    to {
+     opacity: 1;
+     transform: translate(0px);
+    }
+}
+@keyframes reveal-bottom {
+    from {
+     opacity: 0;
+     transform: translateY(100px);
+    }
+    to {
+     opacity: 1;
+     transform: translate(0px);
+    }
+}
+/*===================================================
+    SCROLL ANIMATION
+=====================================================*/
+.animation {
+    opacity: 0;
+    transform: translateX(-300px);
+    transition: all 0.7s ease-out;
+    transition-delay: 0.4s;
+}
+.animation-reverse {
+    opacity: 0;
+    transform: translateX(300px);
+    transition: all 0.7s ease-out;
+    transition-delay: 0.4s;
+}
+    .scroll-animation {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+    .reveal.active{
+        transform: translateY(0);
+        opacity: 1;
+    }
+/*===================================================
+    LOADER ANIMATION
+=====================================================*/
+.loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    z-index: 1000; /* Higher z-index to appear above other elements */
+    color: white;
+    font-size: 24px;
+}
+  #content {
+    display: none; /* Initially hide the content */
+  }
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.loading-screen > .poke-ball:nth-child(1){
+    animation-delay: 0.2s;
+}
+.loading-screen > .poke-ball:nth-child(2){
+    animation-delay: 0.4s;
+}
+.loading-screen > .poke-ball:nth-child(3){
+    animation-delay: 0.6s;
+}
+.loading-screen > .poke-ball:nth-child(4){
+    animation-delay: 0.8s;
+}
+.loading-screen > .poke-ball:nth-child(5){
+    animation-delay: 1.0s;
+}
+.loading-screen > .poke-ball:nth-child(6){
+    animation-delay: 1.2s;
+}
+.loading-screen > .poke-ball:nth-child(7){
+    animation-delay: 1.4s;
+}
+.loading-screen > .poke-ball:nth-child(8){
+    animation-delay: 1.6s;
+}
+.loading-screen > .poke-ball:nth-child(9){
+    animation-delay: 1.8s;
+}
+.loading-screen > .poke-ball:nth-child(10){
+    animation-delay: 2.0s;
+}
+
+/*===================================================
+    LOADER ANIMATION
+=====================================================*/
+.flip {
+    transform: rotateY(180deg);
+}
+.back {
+    background-color: #fff; /* Or any color you want */
+    backface-visibility: hidden;
+}

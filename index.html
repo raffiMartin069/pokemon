@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Pokemon | Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="static/animation.css" />
+    <link rel="stylesheet" type="text/css" href="static/pokemon.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://meyerweb.com/eric/tools/css/reset/reset.css"
+    />
+    <link rel="stylesheet" type="text/css" href="static/index.css" />
+  </head>
+  <body>
+    <header class="page-header fixed-width">
+      <em class="nav-title"
+        ><img
+          src="https://assets.pokemon.com/assets/cms2/img/misc/gus/buttons/logo-pokemon-79x45.png"
+      /></em>
+      <nav class="page-nav text-center">
+        <div class="text-center">
+          <a href="pokemon.html" title="Character Information">characters</a>
+        </div>
+        <div class="text-center">
+          <a href="pokidex.html" title="Pokidex">Pokedex</a>
+        </div>
+      </nav>
+    </header>
+    <!-- Main Content Section -->
+    <section class="main-section">
+      <figure class="main-visual">
+        <div class="main-img-container">
+          <img class="main-img" src="img/main.png" alt="Ash Ketchum" />
+        </div>
+        <figcaption class="figure-content drop">
+          <strong class="content-title">What is Pokemon?</strong>
+          <p>
+            As they work to assemble the greatest monster team possible, players
+            construct teams in the original Pokémon role-playing game. Rock,
+            Paper, Scissors-style combat are fought by Pokémon, which are
+            divided into categories such as water and fire. An example of this
+            would be a player using a water-based Pokémon to defeat a fire-weak
+            Charizard. Pokémon get more powerful and learn new skills as they
+            gain experience. Gym Badges and victories over Gym Leaders are a
+            source of pride for trainers.<br /><br />
+            Pokémon video games were transferred from the Game Boy, which was
+            discontinued, to the Nintendo DS starting in 2006. 2013 saw the
+            release of Pokémon X and Y in stereoscopic 3D on the Nintendo 3DS.
+            When the mobile game Pokémon GO was introduced in 2016, it became an
+            instant hit because it allowed users to capture Pokémon in
+            real-world locations by utilizing the device's camera and GPS to
+            create an augmented reality.
+          </p>
+        </figcaption>
+      </figure>
+    </section>
+    <!-- Cards -->
+    <section class="card-section bottom-top">
+      <div class="card-title">
+        <h1 class="title drop">featured  pokemons</h1>
+      </div>
+      <div class="article-container center">
+        <article class="card-article figure-content">
+          <div class="card-container pikachu pikachu-highlight">
+            <img src="https://pngimg.com/d/pokemon_PNG93.png" alt="Pikachu" />
+            <div class="pokemon-cards">
+              <h4>pikachu</h4>
+            </div>
+          </div>
+          <div class="card-container squirtle squirtle-highlight">
+            <img src="img/squirtle.png" alt="Pikachu" />
+            <div class="pokemon-cards">
+              <h4>squirtle</h4>
+            </div>
+          </div>
+          <div class="card-container bulbasaur bulbasaur-highlight">
+            <img src="img/bulbasaur.png" alt="Pikachu" />
+            <div class="pokemon-cards">
+              <h4>bulbasaur</h4>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="footer-content fixed-width clear-fix">
+        <small class="copyright"
+          >All Content Copyright 2023 - Martinez. All Rights Reserved</small
+        >
+        <small class="credits"
+          >Site designed by
+          <a class="contact-me" href="#">R.D. Martinez</a></small
+        >
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script>
+      // Add an event listener for beforeunload
+      window.onbeforeunload = function () {
+        // Scroll to the top before unloading the page
+        window.scrollTo(0, 0);
+      };  
+    </script>
+    <script src="utils/animate.js"></script>
+  </body>
+</html>
