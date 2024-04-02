@@ -1,0 +1,24 @@
+Name: Rafael D. Martinez
+Year & Section: Bachelor of Science in Information Technology - 2A
+Project: Pokemon Website
+Subject: Professional Elective 2
+Professor: Carla Jane Borja Resnera
+Date: January 15, 2024
+
+JavaScript Effects / Animations:
+
+1. Audio Feature - I have created an audio feature which user can turn on and off by simply clicking the
+pokeball that can be found below the sub-title of Pokemon Gallery (Second Page of HTML || Main project content).
+
+2. A transition in the pokemon.html was added which reveals the title heading whenever page is already rendered.
+
+3. A slight elevation of Home page cards to create a slight highlight when card is hovered. It would showcase
+the pokemon inside the card.
+
+4. A wave effect in main page showing the title of featured pokemons to have a wave effect. It is done to create
+uniqueness among other elements.
+
+5. To have a astonishing effect, I have also added a pulse effect in the Pokedex Page exactly at its heading.
+
+6. A bounce effect is then added in the Pokedex page (All pokemons page) to emphasize them and allows user to 
+appreciate the pokemon even more.

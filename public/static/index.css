@@ -1,0 +1,280 @@
+body, *, *:after, *:before{
+	box-sizing: border-box;
+}
+
+body{
+    display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+.center{
+	text-align: center;
+	align-items: center;
+	align-content: center;
+}
+html, body, .content-title{
+	font-size: 16px;
+	color: #020f11;
+	font-family: 'Roboto', sans-serif;
+}
+.fixed-width{
+	width: 100%;
+	margin: 0;
+}
+.text-center{
+	text-align: center;
+}
+.clear-fix{
+	clear: both;
+}
+/*==================
+	PAGE HEADER
+====================*/
+.logo{
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.nav-title > .pokemon-title:visited{
+	text-decoration: none;
+	color: #020f11;
+}
+
+.pokemon-cards > h4{
+	text-transform:uppercase;
+	font-weight: 800;
+}
+.page-header{
+	/*border: 1px solid darkred;*/
+	padding-left: 1.5em;
+	height: 100%;
+	display: flex;
+  	transition: 0.3s;
+  	transition-timing-function: ease-in;
+}
+.page-nav {
+    display: flex;
+    justify-content: space-between; /* or space-around */
+}
+.page-header > em, nav{
+	font-size: 1.5rem;
+	padding: 0.5em 0.2em 0.5em 0.2em;
+	margin: 0px 15px 0px 15px;
+}
+.page-header > .page-nav{
+	font-size: 1.3rem;
+	padding-top: 0.8em;
+	align-items: center;
+/*	border: 1px solid orangered;*/
+}
+.page-nav > div {
+    flex-grow: 1;
+    display: inline;
+    justify-content:center;
+    padding: 0 1rem; 
+}
+.page-nav > div > a{
+	opacity: 0.6;
+  	transition: 0.3s;
+	color: #020f11;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.page-header:hover{
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.page-nav > div > a:hover{
+/*	text-decoration: underline rgba(0,255,255,0.7);*/
+	opacity: 1;
+	color: black;
+    border-radius: 0.5rem;
+	box-shadow: 3px 5px 5px rgb(255, 67, 67);
+}
+.drop-down{
+	display: none;
+	text-decoration: none;
+	color: #000;
+	position: absolute;
+}
+/*==================
+	MAIN VISUAL
+====================*/
+.main-section{
+	margin: 5px 5px 5px 5px;
+}
+.main-img-container{
+	order: 1;
+	display: flex;
+	margin-top: 2em;
+	transition: 0.3s;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	transition-timing-function: ease-in;
+}
+.figure-content{
+	order: 2;
+	width: 75%;
+	padding-top: 2em;
+	font-size: 1.3em;
+	line-height: 2.5em;
+	text-align: justify;
+}
+.content-title{
+	display: block;
+	font-size: 1.5em;
+	padding-bottom: 0.8em;
+}
+.drop{
+    animation: 5s ease-out 0s 1 drop-in;
+}
+.bottom-top{
+	animation: 5s ease-out 0s 1 reveal-bottom;
+}
+.main-visual{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 3em;
+	background-color: #f4f4f4;
+}
+.main-img-container:hover{
+	transition-timing-function: ease-in;
+	box-shadow: 0px 1px 2px 0px rgba(255, 67, 67,0.7),
+            1px 2px 4px 0px rgba(255, 67, 67,0.7),
+			1px 2px 4px 0px rgba(255, 67, 67,0.7),
+            2px 4px 8px 0px rgba(251, 255, 0,0.7),
+            2px 4px 16px 0px rgba(251, 255, 0, 0.7);
+}
+
+
+/*==================
+	CARDS
+====================*/
+.card-section{
+	margin-top: 3em;
+    transition: 0.3s;
+    display: block;
+    text-align: left;
+    align-items: center;
+    justify-content: center; /* Center the cards horizontally */
+    transition-timing-function: ease-in;
+}
+.card-article p{
+	flex-direction: column;
+}
+.card-article{
+	display: flex;
+	margin: 0.5em, 2em, 0.5em, 2em;
+}
+.card-container{
+    height: auto; /* Set a fixed height */
+    display: flex;
+	border-radius: 5%;
+    padding: 2em 0;
+	transition: 0.3s;
+	flex-direction: column;
+    margin: 0 2em 10em 2em;
+	justify-content: space-between;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.card-title > img{
+	margin: 0 2em 10em 2em;
+}
+.pokemon-cards {
+    text-align: center;
+}
+.pokemon-cards h3 {
+    display: inline-block;
+    margin-top: 3em; /* Remove default margin */
+	text-transform: capitalize;
+	font-weight: 500;
+}
+.pikachu{
+	width: 300px;
+}
+.squirtle{
+	width: 300px;
+}
+.bulbasaur{
+	width: 300px;
+}
+.card-container {
+	padding: 2em 0 2em 0;
+	margin: 0 2em 10em 2em;
+}
+.article-container{
+    display: flex;
+    justify-content: center;
+}
+.card-title > .title{
+	display: flex;
+    justify-content: center;
+	font-size: 3rem;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+.pikachu-highlight:hover {
+	box-shadow: 0px 1px 2px 0px rgba(243, 236, 142, 0.7),
+            1px 2px 4px 0px rgba(245, 237, 121, 0.7),
+			1px 2px 4px 0px rgba(250, 238, 75, 0.7),
+            2px 4px 8px 0px rgba(255, 241, 46, 0.7),
+            2px 4px 16px 0px rgba(117, 114, 73, 0.7);
+	transform: translate(-10px, -10px);
+}
+.squirtle-highlight:hover{
+	box-shadow: 0px 1px 2px 0px rgba(0, 32, 100, 0.7),
+            1px 2px 4px 0px rgba(1, 46, 143, 0.7),
+			1px 2px 4px 0px rgba(3, 44, 134, 0.7),
+            2px 4px 8px 0px rgba(3, 60, 182, 0.7),
+            2px 4px 16px 0px rgba(11, 78, 224, 0.7);
+	transform: translate(-10px, -10px);
+}
+.bulbasaur-highlight:hover{
+	box-shadow: 0px 1px 2px 0px rgba(0, 100, 30, 0.7),
+			1px 2px 4px 0px rgba(1, 128, 39, 0.7),
+			1px 2px 4px 0px rgba(2, 173, 53, 0.7),
+			2px 4px 8px 0px rgba(8, 209, 68, 0.7),
+			2px 4px 16px 0px rgba(29, 224, 87, 0.7);
+	transform: translate(-10px, -10px);
+}
+/*==================
+	PAGE FOOTER
+====================*/
+.page-footer{
+	height: 70px;
+	display: absolute;
+	bottom: 0;
+	position:static;
+	margin-top: auto;
+	color: #9b9b9b;
+	font-size: 0.9rem;
+	background: #f4f4f4;
+}
+.page-header > div{
+	font-size: 3em;	
+	color: white;
+}
+.copyright{
+	float: left;
+}
+.credits{
+	float: right;
+}
+.credits > a{
+	list-style: none;
+	text-decoration: none;
+	color: #9b9b9b;
+}
+.credits > a:visited{
+    color: #9b9b9b;
+}
+.footer-content{
+	padding: 1em 0;
+	display: absolute;
+}
+.footer-content > small{
+	padding: 0 25px 0 25px;
+}
