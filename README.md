@@ -7,6 +7,7 @@
   - https://raffimartin069.github.io/pokemon/
   - https://glittery-jelly-008680.netlify.app/
   - https://pokemon-ten-dusky.vercel.app/
+  - https://pokemonsters-10dee.firebaseapp.com/
  
 ## How does it look?
 ### Landing page
@@ -24,5 +25,7 @@
 ![image](https://github.com/raffiMartin069/pokemon/assets/125887013/79cdd97b-6da1-42ba-a6f0-bfa45ab94791)
 ![image](https://github.com/raffiMartin069/pokemon/assets/125887013/99af5172-75bd-4935-bd34-8d0fb51adb15)
 
-
-
+## Connect with me!:
+  - https://www.linkedin.com/feed/
+  - https://medium.com/@raffimartin069
+  - raffimartin069@gmail.com
